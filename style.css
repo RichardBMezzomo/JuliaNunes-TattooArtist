@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+:root {
+    --ff-primary: 'Open Sans', sans-serif;
+}
+
 body{
     padding-left: 2vw;
     padding-right: 2vw;
@@ -44,7 +48,28 @@ header{
     width: 250px;
 }
 
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+hr {
+    border: solid 1px #a4a2a3;
+    margin: 28px auto;
+}
+
 .about-img {
     width: 350px;
-    height: 500px;
+    height: 400px;
+    margin-left: 100px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+.txt-about {
+    padding: 0 53px;
+}
+
+.txt-about p {
+    font-family: var(--ff-primary);
+    font-size: 18px;
 }
