@@ -54,6 +54,8 @@ header{
 hr {
     border: solid 1px #a4a2a3;
     margin: 28px auto;
+    position: relative;
+    left: -50px;
 }
 
 .about-img {
