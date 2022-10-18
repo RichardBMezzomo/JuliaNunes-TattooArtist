@@ -57,21 +57,24 @@ hr {
 }
 
 .about-img {
-    width: 385px;
-    height: 580px;
-    margin-left: 80px;
+    width: 440px;
+    height: 570px;
+    margin-left: 110px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
     position: relative;
     top: 30px; 
+    left: -50px;
 }
 
 .txt-about {
-    padding: 0 53px;
     text-align: justify;
 }
 
 .txt-about p {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: .149em;
+    margin-right: 53px;
 }
 
 .txt-about h1 {
@@ -80,5 +83,5 @@ hr {
 
 .assinatura {
     text-align: end;
-    padding: 30px 228px 0 0;
+    padding: 30px 100px 0 0;
 }
