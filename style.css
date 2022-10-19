@@ -49,6 +49,7 @@ header{
     flex-direction: row;
 
     font-family: var(--ff-primary);
+    margin: 70px 0 100px;
 }
 
 hr {
@@ -68,18 +69,21 @@ hr {
     left: -50px;
 }
 
-.txt-about {
+.txt-about,
+.txt-processo-criativo  {
     text-align: justify;
 }
 
-.txt-about p {
+.txt-about p,
+.txt-processo-criativo p {
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: .149em;
     margin-right: 53px;
 }
 
-.txt-about h1 {
+.txt-about h1,
+.txt-processo-criativo h1 {
     font-size: 28px;
 }
 
@@ -87,3 +91,29 @@ hr {
     text-align: end;
     padding: 30px 100px 0 0;
 }
+
+.processo-criativo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+
+    font-family: var(--ff-primary);
+}
+
+.processo-criativo img {
+    width: 300px;
+    height: 450px;
+    margin-left: 110px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    position: relative;
+    top: 30px; 
+    left: -50px;
+    
+}
+
+.txt-processo-criativo img {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    top: 103px;
+    left: 131px;
