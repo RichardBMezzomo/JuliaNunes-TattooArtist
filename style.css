@@ -13,10 +13,6 @@ html, body, figure, img, div, section, article, input, select, button, textarea,
     --ff-primary: 'Open Sans', sans-serif;
 }
 
-body{
-    padding: 0 2vw;
-}
-
 .bg-texture{
     position: fixed;
     height: 100vh;
@@ -25,6 +21,8 @@ body{
     opacity: 1;
     background-image: url(../JuliaNunes-TattooArtist/Res/IMG/);
 }
+
+/*-------HEADER-----------*/
 header{
     display: flex;
     align-items: center;
@@ -43,7 +41,7 @@ header{
 #logo-imagem{
     width: 250px;
 }
-
+/*-----------ABOUT-----------*/
 .about {
     display: flex;
     flex-direction: row;
@@ -91,7 +89,7 @@ hr {
     text-align: end;
     padding: 30px 100px 0 0;
 }
-
+/*------PROCESSO CRIATIVO--------*/
 .processo-criativo {
     display: flex;
     flex-direction: row;
@@ -117,4 +115,33 @@ hr {
     position: relative;
     top: 103px;
     left: 131px;
+}
+
+
+/*---Footer---*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 30px;
+    margin-top: 15vh;
+    width: auto;
+}
+
+footer .footer-logo img{
+    filter: invert();
+    width: 250px;
+}
+
+footer .info p{
+    color: white;
+    line-height: 35px;
+}
+
+.footer-media a{
+    font-size: 40px;
+    color: white;
+    padding: 0 15px;
 }
