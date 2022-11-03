@@ -8,7 +8,10 @@ html, body, figure, img, div, section, article, input, select, button, textarea,
     list-style: none;
     text-decoration: none;
 }
-
+@font-face {
+    font-family: Brilliant;
+    src: url(./Res/brilliant_signature/Brilliant\ -\ Personal\ Use.ttf);
+}
 :root {
     --ff-primary: 'Open Sans', sans-serif;
 }
@@ -37,10 +40,55 @@ header{
     padding: 0 8px;
     border-right: 1px solid black;
 }
-
+.menu a:nth-child(4){
+    border: none;
+}
 #logo-imagem{
     width: 250px;
 }
+/*-----------Home------------*/
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 3em;
+}
+#video-home{
+    width: 430px;
+    margin-right: 15px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#content div{
+    display: flex;
+    flex-direction: column;
+    padding: 5em 15em;
+    align-items: center;
+    justify-content: center;
+}
+#content div h1{
+    font-size: 80px;
+}
+#content div h1 #title-cursive{
+    font-family: Brilliant;
+}
+#content div a{
+    font-family: var(--ff-primary);
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: solid 2px;
+    margin: 6em;
+}
+.caroussel{
+    height: 150px;
+    width: 80vw;
+    background-color: #a4a2a3;
+}
+
 /*-----------ABOUT-----------*/
 .about {
     display: flex;
