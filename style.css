@@ -99,11 +99,9 @@ header{
     flex-direction: row;
 
     font-family: var(--ff-primary);
-    margin: 70px 0 50px;
 }
 
 .about hr {
-    border: solid 1px #a4a2a3;
     margin: 28px auto;
     position: relative;
     left: -50px;
@@ -119,22 +117,24 @@ header{
     left: -50px;
 }
 
-.txt-about,
-.txt-processo-criativo  {
+.txt-about {
     text-align: justify;
 }
 
-.txt-about p,
-.txt-processo-criativo p {
+.txt-about p {
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: .149em;
     margin-right: 53px;
 }
 
-.txt-about h1,
-.txt-processo-criativo h1 {
-    font-size: 28px;
+.txt-about h1 {
+    font-size: 65px;
+    font-family: Brilliant;
+    font-weight: 400;
+    position: relative;
+    top: 48px;
+    left: -12px;
 }
 
 .assinatura {
@@ -146,15 +146,38 @@ header{
 .processo-criativo {
     display: flex;
     flex-direction: row;
-    padding-bottom: 100px;
+    padding: 150px 0;
 
     font-family: var(--ff-primary);
 }
 
+.txt-processo-criativo {
+    text-align: justify;
+}
+
+.txt-processo-criativo2 {
+    position: relative;
+    top: -100px;
+    left: 25px;
+}
+
+.txt-processo-criativo p {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: .149em;
+    margin-right: 53px;
+}
+
+.txt-processo-criativo hr {
+    position: relative;
+    top: -110px;
+}
+
+
 .processo-criativo img {
     width: 300px;
-    height: 400px;
-    margin-left: 110px;
+    height: 450px;
+    margin-left: 60px;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
    
     
@@ -164,7 +187,9 @@ header{
     font-size: 65px;
     font-family: Brilliant;
     font-weight: 400;
-    
+    position: relative;
+    top: -82px;
+    left: 27px;
 }
 
 /*---Portifolio---*/
