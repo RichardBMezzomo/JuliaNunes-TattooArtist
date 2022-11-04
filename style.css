@@ -19,10 +19,11 @@ html, body, figure, img, div, section, article, input, select, button, textarea,
 .bg-texture{
     position: fixed;
     height: 100vh;
-    width: 150vw;
+    width: 100vw;
     z-index: -999;
     opacity: 1;
     background-image: url(./Res/IMG/screen_2x.jpg);
+    background-size: 2560px;
     background-repeat: no-repeat;
 }
 
@@ -50,12 +51,12 @@ header{
 /*-----------Home------------*/
 .home{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px 3em;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px 3.5em;
 }
 #video-home{
     width: 430px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 #content{
     display: flex;
@@ -65,7 +66,6 @@ header{
 #content div{
     display: flex;
     flex-direction: column;
-    padding: 5em 15em;
     align-items: center;
     justify-content: center;
 }
@@ -88,8 +88,8 @@ header{
     margin: 6em;
 }
 .caroussel{
-    height: 150px;
-    width: 650px;
+    height: 350px;
+    width: 80vw;
     background-color: #a4a2a3;
 }
 
@@ -219,6 +219,7 @@ hr {
 .img-portifolio{
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
     
 }
 
