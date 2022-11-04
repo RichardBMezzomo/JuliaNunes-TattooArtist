@@ -95,10 +95,10 @@ header{
     flex-direction: row;
 
     font-family: var(--ff-primary);
-    margin: 70px 0 100px;
+    margin: 70px 0 50px;
 }
 
-hr {
+.about hr {
     border: solid 1px #a4a2a3;
     margin: 28px auto;
     position: relative;
@@ -109,9 +109,9 @@ hr {
     width: 440px;
     height: 570px;
     margin-left: 110px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
     position: relative;
-    top: 30px; 
+    top: 146px;
     left: -50px;
 }
 
@@ -128,9 +128,13 @@ hr {
     margin-right: 53px;
 }
 
-.txt-about h1,
-.txt-processo-criativo h1 {
-    font-size: 28px;
+.txt-about h1 {
+    font-size: 65px;
+    font-family: Brilliant;
+    font-weight: 400;
+    position: relative;
+    top: 46px;
+    left: -27px;
 }
 
 .assinatura {
@@ -141,28 +145,25 @@ hr {
 .processo-criativo {
     display: flex;
     flex-direction: row;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 
     font-family: var(--ff-primary);
 }
 
 .processo-criativo img {
     width: 300px;
-    height: 450px;
+    height: 400px;
     margin-left: 110px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
-    position: relative;
-    top: 30px; 
-    left: -50px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
+   
     
 }
 
-.txt-processo-criativo img {
-    width: 200px;
-    height: 250px;
-    position: relative;
-    top: 103px;
-    left: 131px;
+.txt-processo-criativo h1 {
+    font-size: 65px;
+    font-family: Brilliant;
+    font-weight: 400;
+    
 }
 
 
