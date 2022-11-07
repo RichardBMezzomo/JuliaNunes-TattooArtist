@@ -19,10 +19,11 @@ html, body, figure, img, div, section, article, input, select, button, textarea,
 .bg-texture{
     position: fixed;
     height: 100vh;
-    width: 150vw;
+    width: 100vw;
     z-index: -999;
     opacity: 1;
     background-image: url(./Res/IMG/screen_2x.jpg);
+    background-size: 2560px;
     background-repeat: no-repeat;
 }
 
@@ -50,12 +51,12 @@ header{
 /*-----------Home------------*/
 .home{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px 3em;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px 3.5em;
 }
 #video-home{
     width: 430px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 #content{
     display: flex;
@@ -65,7 +66,6 @@ header{
 #content div{
     display: flex;
     flex-direction: column;
-    padding: 5em 15em;
     align-items: center;
     justify-content: center;
 }
@@ -88,8 +88,8 @@ header{
     margin: 6em;
 }
 .caroussel{
-    height: 150px;
-    width: 650px;
+    height: 350px;
+    width: 80vw;
     background-color: #a4a2a3;
 }
 
@@ -99,11 +99,9 @@ header{
     flex-direction: row;
 
     font-family: var(--ff-primary);
-    margin: 70px 0 100px;
 }
 
-hr {
-    border: solid 1px #a4a2a3;
+.about hr {
     margin: 28px auto;
     position: relative;
     left: -50px;
@@ -113,30 +111,40 @@ hr {
     width: 600px;
     height: 750px;
     margin-left: 110px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
     position: relative;
+<<<<<<< HEAD
     top: 100px; 
+=======
+    top: 146px;
+>>>>>>> bd43a827fe217969c65c63ca3eaac66d184f4b32
     left: -50px;
 }
 
-.txt-about,
-.txt-processo-criativo  {
+.txt-about {
     text-align: justify;
 }
 
+<<<<<<< HEAD
 .txt-about p,
 .txt-processo-criativo p {
     font-size: 23px;
+=======
+.txt-about p {
+    font-size: 16px;
+>>>>>>> bd43a827fe217969c65c63ca3eaac66d184f4b32
     line-height: 1.4;
     letter-spacing: .149em;
     margin-right: 53px;
 }
 
-.txt-about h1,
-.txt-processo-criativo h1 {
+.txt-about h1 {
+    font-size: 65px;
     font-family: Brilliant;
-    font-weight: lighter;
-    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    top: 48px;
+    left: -12px;
 }
 
 .assinatura {
@@ -149,28 +157,50 @@ hr {
 .processo-criativo {
     display: flex;
     flex-direction: row;
-    margin-bottom: 100px;
+    padding: 150px 0;
 
     font-family: var(--ff-primary);
 }
 
+.txt-processo-criativo {
+    text-align: justify;
+}
+
+.txt-processo-criativo2 {
+    position: relative;
+    top: -100px;
+    left: 25px;
+}
+
+.txt-processo-criativo p {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: .149em;
+    margin-right: 53px;
+}
+
+.txt-processo-criativo hr {
+    position: relative;
+    top: -110px;
+}
+
+
 .processo-criativo img {
     width: 300px;
     height: 450px;
-    margin-left: 110px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
-    position: relative;
-    top: 30px; 
-    left: -50px;
+    margin-left: 60px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
+   
     
 }
 
-.txt-processo-criativo img {
-    width: 200px;
-    height: 250px;
+.txt-processo-criativo h1 {
+    font-size: 65px;
+    font-family: Brilliant;
+    font-weight: 400;
     position: relative;
-    top: 103px;
-    left: 131px;
+    top: -82px;
+    left: 27px;
 }
 
 /*---Portifolio---*/
@@ -220,6 +250,7 @@ hr {
 .img-portifolio{
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
     
 }
 
