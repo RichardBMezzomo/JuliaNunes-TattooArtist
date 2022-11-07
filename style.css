@@ -110,12 +110,12 @@ hr {
 }
 
 .about-img {
-    width: 440px;
-    height: 570px;
+    width: 600px;
+    height: 750px;
     margin-left: 110px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
     position: relative;
-    top: 30px; 
+    top: 100px; 
     left: -50px;
 }
 
@@ -126,7 +126,7 @@ hr {
 
 .txt-about p,
 .txt-processo-criativo p {
-    font-size: 16px;
+    font-size: 23px;
     line-height: 1.4;
     letter-spacing: .149em;
     margin-right: 53px;
@@ -140,6 +140,7 @@ hr {
 }
 
 .assinatura {
+    
     text-align: end;
     padding: 30px 100px 0 0;
 }
