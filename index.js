@@ -15,7 +15,7 @@ function caroussel(){
     console.log(slider);
 
     function clone(){
-        let cloneList = slider.cloneNode(true);
+        cloneList = slider.cloneNode(true);
         carousselContainer.appendChild(cloneList);
         cloneList.style.left = `${width}px`;
     }
@@ -35,13 +35,13 @@ function caroussel(){
     function moveSecond(){
         x2 -= speed;
 
-        if(cloneList >= Math.abs(x2)){
+        if(cloneList.offsetWidth >= Math.abs(x2)){
             cloneList.style.left = `${x2}px`
         }else{
             x2 = width;
         }
     }
-
+    
     function hover(){
         clearInterval(a);
         clearInterval(b);
@@ -51,6 +51,7 @@ function caroussel(){
         a = setInterval(moveFirst, 10);
         b = setInterval(moveSecond, 10);
     }
+    
     clone();
     
     let a = setInterval(moveFirst, 10);
@@ -58,6 +59,8 @@ function caroussel(){
     
     carousselContainer.addEventListener("mouseenter", hover);
     carousselContainer.addEventListener("mouseleave", unhover);
+
+    
 }
 
 caroussel();
