@@ -121,6 +121,7 @@ header{
     display: flex;
     flex-direction: row;
     margin-bottom: 100px;
+    align-items: center;
 
     font-family: var(--ff-primary);
     width: 100vw;
@@ -132,16 +133,17 @@ header{
 
 #about-img{
     z-index: 2;
+    
 }
 
 #about-img img{
-    width: 25vw;
-    height: 70vh;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
+    border-radius: 2px;
 }
 
 .txt-about{
     margin-left: 50px;
+    
 }
 
 .txt-about p {
@@ -149,31 +151,37 @@ header{
     line-height: 1.4;
     letter-spacing: .149em;
     margin-right: 53px;
+    
 }
 
 .txt-about h1 {
     font-size: 65px;
     font-family: Brilliant;
     font-weight: 400;
+    
 }
 
 .assinatura {
     text-align: end;
-    padding: 30px 100px 0 0;
+    padding: 10px 100px 0 0;
+}
+
+.assinatura span {
+    font-family: Brilliant;
+    font-size:23px;
 }
 
 /*------PROCESSO CRIATIVO--------*/
 .processo-criativo {
     display: flex;
     flex-direction: row;
+    gap: 50px;
+
     font-family: var(--ff-primary);
     width: 100vw;
-}
 
-.txt-processo-criativo{
-    margin-left: 50px;
+    margin-bottom: 100px;
 }
-
 .txt-processo-criativo p {
     font-size: 16px;
     line-height: 1.4;
@@ -181,22 +189,41 @@ header{
     margin-right: 53px;
 }
 
-.txt-processo-criativo hr {
+.title-processo-criativo hr {
     left: -50px;
 }
 
-
 #img-pc img{
-    width: 25vw;
-    height: 70vh;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
-
 }
 
-.txt-processo-criativo h1 {
+.title-processo-criativo h1 {
     font-size: 65px;
     font-family: Brilliant;
     font-weight: 400;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pictureOne img, .pictureTwo img{
+    width: 150px;
+    height: 150px;
+}
+
+.pictureThree img {
+    width: 200px;
+    height: 200px;
+}
+
+.pictures strong {
+    font-size: 100px;
+    font-weight: 200;
 }
 
 /*---Portifolio---*/
