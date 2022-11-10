@@ -16,6 +16,10 @@ html, body, figure, img, div, section, article, input, select, button, textarea,
     --ff-primary: 'Open Sans', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .bg-texture{
     position: fixed;
     height: 100vh;
@@ -25,6 +29,10 @@ html, body, figure, img, div, section, article, input, select, button, textarea,
     background-image: url(./Res/IMG/screen_2x.jpg);
     background-size: 2560px;
     background-repeat: no-repeat;
+}
+
+.about, .processo-criativo, .Portifolio, .home{
+    padding: 10px 3em;
 }
 
 /*-------HEADER-----------*/
@@ -89,50 +97,39 @@ header{
 }
 .caroussel{
     height: 350px;
-    width: 80vw;
+    width: 30vw;
     background-color: #a4a2a3;
 }
 
 /*-----------ABOUT-----------*/
+
 .about {
     display: flex;
     flex-direction: row;
-
     font-family: var(--ff-primary);
+    width: 100vw;
 }
 
 .about hr {
-    margin: 28px auto;
-    position: relative;
     left: -50px;
 }
 
-.about-img {
-    width: 600px;
-    height: 750px;
-    margin-left: 110px;
+#about-img{
+    z-index: 2;
+}
+
+#about-img img{
+    width: 25vw;
+    height: 70vh;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
-    position: relative;
-<<<<<<< HEAD
-    top: 100px; 
-=======
-    top: 146px;
->>>>>>> bd43a827fe217969c65c63ca3eaac66d184f4b32
-    left: -50px;
 }
 
-.txt-about {
-    text-align: justify;
+.txt-about{
+    margin-left: 50px;
 }
 
-<<<<<<< HEAD
-.txt-about p,
-.txt-processo-criativo p {
-    font-size: 23px;
-=======
 .txt-about p {
     font-size: 16px;
->>>>>>> bd43a827fe217969c65c63ca3eaac66d184f4b32
     line-height: 1.4;
     letter-spacing: .149em;
     margin-right: 53px;
@@ -142,13 +139,9 @@ header{
     font-size: 65px;
     font-family: Brilliant;
     font-weight: 400;
-    position: relative;
-    top: 48px;
-    left: -12px;
 }
 
 .assinatura {
-    
     text-align: end;
     padding: 30px 100px 0 0;
 }
@@ -157,19 +150,12 @@ header{
 .processo-criativo {
     display: flex;
     flex-direction: row;
-    padding: 150px 0;
-
     font-family: var(--ff-primary);
+    width: 100vw;
 }
 
-.txt-processo-criativo {
-    text-align: justify;
-}
-
-.txt-processo-criativo2 {
-    position: relative;
-    top: -100px;
-    left: 25px;
+.txt-processo-criativo{
+    margin-left: 50px;
 }
 
 .txt-processo-criativo p {
@@ -180,36 +166,31 @@ header{
 }
 
 .txt-processo-criativo hr {
-    position: relative;
-    top: -110px;
+    left: -50px;
 }
 
 
-.processo-criativo img {
-    width: 300px;
-    height: 450px;
-    margin-left: 60px;
+#img-pc img{
+    width: 25vw;
+    height: 70vh;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
-   
-    
+
 }
 
 .txt-processo-criativo h1 {
     font-size: 65px;
     font-family: Brilliant;
     font-weight: 400;
-    position: relative;
-    top: -82px;
-    left: 27px;
 }
 
 /*---Portifolio---*/
 
 .Portifolio{
-    padding: 10px 3em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
 }
 
 .txt-portifolio{
@@ -218,6 +199,7 @@ header{
 }
 
 .txt-portifolio h1{
+    margin-left: 50px;
     font-family: Brilliant;
     font-weight: lighter;
     font-size: 60px;
@@ -233,25 +215,93 @@ header{
     letter-spacing: 3px;
 }
 
-.txt-portifolio ul{
-    margin: 50px 0px 0px 50px;
-}
-
-.txt-portifolio li{
-    font-family: var(--ff-primary);
+#txt-lista {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
 }
 
 .img-portifolio img{
-    width: 120px;
-    height: 140px;
-    margin: 5px 0px;
+    width: 10vw;
+    height: 18vh;
+    margin: 0px 20px;
 }
 
 .img-portifolio{
     display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px; 
+}
+
+/*---Atendimento---*/
+
+.Atendimento {
+    margin-bottom: 80px;
+    padding: 10px 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+}
+
+#img-endereco{
+    width: 40vw;
+    height: 70vh;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
+    z-index: 2;
+}
+
+.txt-atendimento{
+    font-size: 25px;
+    margin: 0px 120px 0px 50px;
+}
+
+.txt-atendimento h1{
+    font-family: Brilliant;
+    font-weight: lighter;
+    font-size: 60px;
+}
+
+.txt-atendimento hr{
+    position: relative;
+    left: -100px;
+}
+
+.txt-atendimento p{
+    margin: 20px 0px;
+    font-family: var(--ff-primary);
+    letter-spacing: 3px;
+}
+
+.txt-atendimento i{
+    font-size: 3vh;
+    color: rgb(132, 11, 172);
+}
+
+#title-whats i{
+    font-size: 3.5vh;
+}
+
+#title-whats{
+    margin-top: 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#title-horario{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#txt-contato, #txt-horario{
+    margin-top: -15px;
+    padding-left: 45px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 800;
+
 }
 
 /*---Footer---*/
@@ -262,7 +312,6 @@ footer{
     align-items: center;
     background-color: black;
     padding: 0 30px;
-    margin-top: 15vh;
     width: auto;
 }
 
