@@ -31,7 +31,6 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 }
-
 .about, .processo-criativo, .Portifolio, .home{
     padding: 10px 0px 0px 3em;
 }
@@ -42,7 +41,6 @@ header{
     justify-content: space-between;
     padding: 0 25px;
 }
-
 .menu a{
     font-family:'Times New Roman', Times, serif;
     font-size: 18px;
