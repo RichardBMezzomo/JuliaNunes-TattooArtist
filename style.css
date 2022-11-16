@@ -188,6 +188,7 @@ header{
 }
 #img-pc img{
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
+    border-radius: 2px;
     width: 400px;
     height: 450px;
 }
