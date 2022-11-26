@@ -1,0 +1,71 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vw;  
+}
+#bg-texture{
+    overflow-x: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -999;
+    opacity: 1;
+    background-image: url(../Res/IMG/screen_2x.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+section{
+    margin-top: 15vh;
+}
+h1{
+    font-size: 5vw;
+}
+
+h2{
+    font-size: 4vw;
+}
+h3{
+    font-size: 3vw;
+    padding: 20px;
+}
+p{
+    font-size: 2vw;
+    padding-top: 30px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-column div{
+    margin-top: 25px;
+}
+img{
+    width: 100%;
+}
+.image{
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    padding-left: 6vw;
+}
+/*----config sections----*/
+
+.cliente{
+    display: flex;
+}
+.cliente img{
+    margin-right: 10vw;
+}
+.julia{
+    width: 400px;
+}
+.problema{
+    display: flex;
+}
+.solução{
+    display: flex;
+}

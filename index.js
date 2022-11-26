@@ -59,8 +59,6 @@ function caroussel(){
     
     carousselContainer.addEventListener("mouseenter", hover);
     carousselContainer.addEventListener("mouseleave", unhover);
-
-    
 }
 
 caroussel();
