@@ -1,34 +1,28 @@
-html, body, figure, img, div, section, article, input, select, button, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; 
-    list-style: none;
-    text-decoration: none;
-}
+
+/*---------import & var---------*/
 @font-face {
     font-family: Brilliant;
     src: url(./Res/brilliant_signature/Brilliant\ -\ Personal\ Use.ttf);
 }
 :root {
     --ff-primary: 'Open Sans', sans-serif;
-
     --fs-paragraf: 16px;
     --fs-title: 60px;
 }
+/*---------Global---------*/
 html{
     scroll-behavior: smooth;
 }
-body{
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 2560px;
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.432) 0%, rgb(251, 250, 251) 30%,rgba(0, 0, 0, 0.34)80%);
+    border-radius: 3px;
 }
 .bg-texture{
+    overflow-x: hidden;
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -63,6 +57,7 @@ header{
 }
 /*-----------Home------------*/
 .home{
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr 4fr;
     padding: 10px 3.5em;
@@ -82,11 +77,12 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
-#content #slogan{
+#slogan{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 79vw;
 }
 #btn-orçamento{
     font-size: 20px;
@@ -94,13 +90,13 @@ header{
     letter-spacing: 3px;
 }
 #content div h1{
-    font-size: 50px;
+    font-size: 3vw;
     font-family: 'Aboreto', cursive;
     font-weight: lighter;
 }
 #title-cursive{
-    padding-left: 9.7em;
-    font-size: 70px;
+    padding-left: 40vw;
+    font-size: 5rem;
     font-family: Brilliant;
     font-weight: 200;
 }
@@ -115,13 +111,17 @@ header{
 }
 /*--caroussel home--*/
 .caroussel{
-   overflow: hidden; 
-   background-color: #0000001d;
-   box-shadow: 5px 10px 30px rgba(0,0,0,0.15);
-   padding: 10px 0px 10px 0px;
-   width: 79.8vw;
+    width: 80vw;
+    overflow: hidden; 
+}
+.caroussel p{
+    font-size: 1.3vw;
+    padding-bottom: 10px;
 }
 .caroussel-container{
+    background-color: #0000001d;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.15);
+    padding: 10px 0px 10px 0px;
     position: relative;
     display: flex;
     height: 11em;
@@ -183,6 +183,7 @@ header{
     padding: 10px 100px 0 0;
 }
 .assinatura span {
+    height: 30px;
     font-family: Brilliant;
     font-size:23px;
 }
@@ -315,6 +316,34 @@ header{
     font-style: italic;
     font-weight: 800;
 }
+/*-----Pinned-layer-----*/
+#wpp-btn{
+    padding-left: 5px;
+}
+#wpp-btn img{
+    width: 45px;
+}
+.social-media{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 68vh;
+    right: 1vw;
+    z-index: 1000;
+}
+.social-media a{
+    margin-bottom: 15px;
+}
+.social-media #insta{
+    background-color: rgba(251, 251, 251, 0.333);
+    backdrop-filter: blur(10px);
+    font-size: 50px;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
 /*---Footer---*/
 footer{
     display: flex;
@@ -322,7 +351,7 @@ footer{
     align-items: center;
     background-color: black;
     padding: 0 30px;
-    width: auto;
+    width: 100%;
 }
 footer .footer-logo img{
     filter: invert();
@@ -336,4 +365,23 @@ footer .info p{
     font-size: 40px;
     color: white;
     padding: 0 15px;
+}
+
+/*-----Responsive----*/
+
+@media screen and (max-width: 1600px) {
+    #slogan{
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+    #t-slogan h1{
+        font-size: 3vw;
+    }
+    #t-slogan h2{
+        font-size: 4vw;
+        padding-left: 40;
+    }
+    #content div a{
+        margin: 8vh 20vw;
+    }
 }
