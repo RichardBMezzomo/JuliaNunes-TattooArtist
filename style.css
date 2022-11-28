@@ -90,6 +90,7 @@ header{
     letter-spacing: 3px;
 }
 #content div h1{
+    padding-top: 50px;
     font-size: 3vw;
     font-family: 'Aboreto', cursive;
     font-weight: lighter;
@@ -205,11 +206,16 @@ header{
 .title-processo-criativo hr {
     left: -50px;
 }
-#img-pc img{
+
+#video {
+    z-index: 2;
+}
+
+#video-pc video{
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
     border-radius: 2px;
-    width: 400px;
-    height: 450px;
+    width: 26vw;
+    height: 70vh;
 }
 .title-processo-criativo h1 {
     font-size: var(--fs-title);
