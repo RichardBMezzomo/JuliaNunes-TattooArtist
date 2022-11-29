@@ -18,72 +18,120 @@ main{
 }
 
 section{
-    margin-top: 10vh;
+    margin-top: 25vh;
+}
+
+/* TITULO */
+
+main h1{
+    font-size: 6vw;
+}
+
+main img{
+    transform: translateY(-60px);
+    width: 80vw;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos{
+    transform: translateY(-300px);
 }
 
 .quem-somos h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 8vw;
 }
 
-h1{
-    font-size: 5vw;
-}
-
-h2{
-    font-size: 4vw;
-}
-
-h3{
-    font-size: 3vw;
-    padding: 20px;
-}
-
-p{
-    font-size: 2vw;
-    padding-top: 30px;
-}
-
-.flex-column{
+.quem-somos .flex-column{
     display: flex;
-
-}
-
-.flex-column div{
-    padding: 0px 75px 0px 97px;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-img{
-    width: 80%;
+.quem-somos .flex-column .content p{
+    font-size: 2.5vw;
 }
 
-.image{
-    width: 800px;
-    align-items: center;
-    justify-content: center;
+.quem-somos .flex-column .content li{
+    font-size: 1.5vw;
 }
 
-.content{
-    
-}
-
-/*----config sections----*/
+/* CLIENTE */
 
 .cliente{
     display: flex;
 }
-.cliente img{
-    margin-right: 10vw;
+
+.cliente .julia img{
+    width: 100%;
 }
-.julia{
-    width: 400px;
+
+.cliente .julia{
+    width: 20vw;
+    margin-right: 3vw;
 }
-.problema{
+
+.cliente .content-cli h2{
+    margin: 0;
+    font-size: 8vw;
+}
+
+.cliente .content-cli h3{
+    font-size: 4vw;
+}
+
+/* PROBLEMA e SOLUCAO */
+
+.problema, .solucao{
+    display: flex
+}
+
+.solucao{
+    margin-top: 10vh;
+}
+
+.solucao #config-img{
+    width: 45vw;
+}
+
+.image{
+    width: 35vw;
+    padding-top: 10vh;
+    margin-right: 3vw;
+}
+
+.image img{   
+    width: 100%;
+}
+
+.txt-content h2{
+    margin: 0;
+    font-size: 6vw;
+}
+
+.txt-content p{
+    font-size: 2vw;
+}
+
+/* PROXIMOS PASSOS */
+
+.proximos-passos{
+    margin-bottom: 30vh;
+}
+
+.proximos-passos h2{
+    text-align: center;
+    font-size: 4vw;
+}
+
+.proximos-passos ul{
+    width: 50vw;
     display: flex;
+    justify-content: space-between;
 }
-.solução{
-    display: flex;
+
+.proximos-passos li{
+    font-size: 2vw;
 }

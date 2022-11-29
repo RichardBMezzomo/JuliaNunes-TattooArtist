@@ -215,7 +215,6 @@ header{
     box-shadow: 3px 3px 10px rgb(0 0 0 / 36%);
     border-radius: 2px;
     width: 26vw;
-    height: 70vh;
 }
 .title-processo-criativo h1 {
     font-size: var(--fs-title);
